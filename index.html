@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map課題</title>
+    <meta name="description" content="MapApi">
+
+    <!--SNSでシェアした際にタイトルやイメージ画像、詳細などを表示する-->
+    <meta property="og:title" content="MapApi">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="#">
+    <!-- <meta property="og:image" content="#"> -->
+    <meta property="og:site_name" content="MapApi">
+    <meta property="og:description" content="MapApiを使った何かです">
+
+    <!--スマホから見たとき、番号に電話リンクをつけない-->
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+    <body>
+    <!-- MAP[START] -->
+    <div id="myMap" class="myMap"></div>
+    <div id="inputForm" class="inputForm" style="display:none;">
+        <table>
+            <tr><td colspan="2"></td></tr>
+            <tr><td>Title</td><td><input id="titleTbx" type="text" /></td></tr>
+            <tr><td>Description</td><td><input id="descriptionTbx" type="text" /></td></tr>
+            <tr><td colspan="2"><input type="button" value="Save" onclick="saveData()" style="float:right;"/></td></tr>
+        </table>
+    </div>
+    <!-- MAP[END] -->
+
+    <!-- [ MapTypeId ] https://msdn.microsoft.com/en-us/library/mt712700.aspx -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AgcDt0D_tmGXR9kXjjWlntKjpgFtofTo3eP4FKIDddpXwDtYux0HYvtm5rgnaWgi' async defer></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>
